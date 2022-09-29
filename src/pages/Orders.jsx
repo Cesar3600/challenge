@@ -1,6 +1,6 @@
-import React from 'react';
-import OrderItem from '../components/OrderItem';
-import '../styles/Orders.scss';
+import React from 'react'
+import OrderItem from '../components/OrderItem'
+import '@styles/Orders.scss'
 
 const Orders = () => {
 	return (
@@ -12,7 +12,7 @@ const Orders = () => {
 				</div>
 			</div>
 		</div>
-	);
+	)
 }
 
-export default Orders;
+export default Orders

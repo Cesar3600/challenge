@@ -1,17 +1,17 @@
-import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Layout from '../containers/Layout';
-import Home from '../pages/Home';
-import Login from '../pages/Login';
-import PasswordRecovery from '../pages/PasswordRecovery';
-import SendEmail from '../pages/SendEmail';
-import NewPassword from '../pages/NewPassword';
-import MyAccount from '../pages/MyAccount';
-import CreateAccount from '../pages/CreateAccount';
-import Checkout from '../pages/Checkout';
-import Orders from '../pages/Orders';
-import NotFound from '../pages/NotFound';
-import '../styles/global.css';
+import React from 'react'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import Layout from '../containers/Layout'
+import Home from '../pages/Home'
+import Login from '../pages/Login'
+import PasswordRecovery from '../pages/PasswordRecovery'
+import SendEmail from '../pages/SendEmail'
+import NewPassword from '../pages/NewPassword'
+import MyAccount from '../pages/MyAccount'
+import CreateAccount from '../pages/CreateAccount'
+import Checkout from '../pages/Checkout'
+import Orders from '../pages/Orders'
+import NotFound from '../pages/NotFound'
+import '@styles/global.css'
 
 const App = () => {
 	return (
@@ -20,7 +20,11 @@ const App = () => {
 				<Switch>
 					<Route exact path="/" component={Home} />
 					<Route exact path="/login" component={Login} />
-					<Route exact path="/password-recovery" component={PasswordRecovery} />
+					<Route
+						exact
+						path="/password-recovery"
+						component={PasswordRecovery}
+					/>
 					<Route exact path="/send-email" component={SendEmail} />
 					<Route exact path="/new-password" component={NewPassword} />
 					<Route exact path="/account" component={MyAccount} />
@@ -31,7 +35,7 @@ const App = () => {
 				</Switch>
 			</Layout>
 		</BrowserRouter>
-	);
+	)
 }
 
-export default App;
+export default App

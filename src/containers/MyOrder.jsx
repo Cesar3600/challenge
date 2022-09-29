@@ -1,12 +1,13 @@
-import React from 'react';
-import OrderItem from '../components/OrderItem';
-import '../styles/MyOrder.scss';
+import React from 'react'
+import OrderItem from '../components/OrderItem'
+import '@styles/MyOrder.scss'
+import flechita from '@icons/flechita.svg'
 
 const MyOrder = () => {
 	return (
 		<aside className="MyOrder">
 			<div className="title-container">
-				<img src="./icons/flechita.svg" alt="arrow" />
+				<img src={flechita} alt="arrow" />
 				<p className="title">My order</p>
 			</div>
 			<div className="my-order-content">
@@ -17,12 +18,10 @@ const MyOrder = () => {
 					</p>
 					<p>$560.00</p>
 				</div>
-				<button className="primary-button">
-					Checkout
-				</button>
+				<button className="primary-button">Checkout</button>
 			</div>
 		</aside>
-	);
+	)
 }
 
-export default MyOrder;
+export default MyOrder
